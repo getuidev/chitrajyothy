@@ -120,7 +120,7 @@ table{border-collapse:collapse;border-spacing:0}
 .videoGallery_Wrapper .bigThumbVideo_Wrap figcaption h3{font-size:18px;line-height:24px;font-weight:600}
 .videoGallery_Wrapper .smallThumbVideo_Wrap figcaption h3{font-size:12px;line-height:18px;font-weight:600}
 .videoGallery_Wrapper .bigThumbVideo_Wrap figcaption h3 a,.videoGallery_Wrapper .smallThumbVideo_Wrap figcaption h3 a{color:#fff}
-.videoGallery_Wrapper figcaption::after{content:'';background-image:url(../images/video-ic.png);background-repeat:no-repeat;position:absolute;top:-20px;right:10px;background-size:100%}
+.videoGallery_Wrapper figcaption::after{content:'';background-image:url(../images/video-ic.png);background-repeat:no-repeat;position:absolute;top:-16px;right:10px;background-size:100%}
 .videoGallery_Wrapper .bigThumbVideo_Wrap figcaption::after{width:34px;height:34px}
 .videoGallery_Wrapper .smallThumbVideo_Wrap figcaption::after{width:26px;height:26px}
 .videoGallery_Wrapper .smallThumbVideo_Wrap figure{position:relative;width:19.2%;margin:0 1% 1% 0}
