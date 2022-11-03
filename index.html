@@ -12,6 +12,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Mandali&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        var swiper = new Swiper(".rkSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 15,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 2,
+                },
+            },
+        });
+    </script>
 </head>
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -30,7 +60,7 @@
                         <a href="#"><img width="230" height="58" src="images/chitrajyothy-logo-new.gif" alt=""></a>
                     </h1>
                 </div>
-                <div class="adsCont"></div>
+                <div class="adsCont headertopads"></div>
                 <div class="topRight_Nav">
                     <div class="topSearch">
                         <div class="search-icon"><i class="search_btn"></i></div>
@@ -117,7 +147,6 @@
                         <li><a href="#">film news</a></li>
                         <li><a href="#">gossips </a></li>
                         <li><a href="#">interviews</a></li>
-                        <li><a href="#">something special</a></li>
                         <li><a href="#">OTT updates</a></li>
                         <li><a href="#">social media</a></li>
                         <li><a href="#">south cinema </a></li>
@@ -127,6 +156,7 @@
                         <li class="has-children">
                             <a title="..." href="#">... <i class="drpdown"></i></a>
                             <ul class="sub-menu">
+                                <li><a href="#">something special</a></li>
                                 <li><a href="#">gallery</a></li>
                                 <li><a href="#">heroine gallery</a></li>
                                 <li><a href="#">reviews</a></li>
@@ -134,11 +164,1098 @@
                             </ul>
                         </li>
                     </ul>
+                    <div class="topSearch">
+                        <div class="search-icon"><i class="search_btn"></i></div>
+                        <form action="" method="get" id="headerSearchMob" class="search" style="display: none;">
+                            <div class="search-box">
+                                <input autocomplete="off" placeholder="Search" type="text" value="" id="searchText2" name="q">
+                                <button class="search-form-btn" type="submit"><img width="14" height="14" src="images/search-white.png" alt=""></button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
-
+    <div class="container-fluid">
+        <div class="container">
+            <div class="twoColumn_Layout">
+                <div class="left_col">
+                    <div class="TopPopularNews">
+                        <div class="commonHD">
+                            <h2><a href="#">Popular News</a></h2>
+                            <a href="#" class="moreNews">view more</a>
+                        </div>
+                        <div class="bigNews_Cont">
+                            <figure>
+                                <div class="image_wrap">
+                                    <a href="#"><img width="767" height="467" src="images/Untitled-1.jpg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <h3>
+                                        <a href="#">Deepika, Ranveer show their support for Aamir 
+                                            as they arrive for Laal</a>
+                                    </h3>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="smallNews_Cont">
+                            <figure>
+                                <div class="image_wrap">
+                                    <a href="#"><img width="140" height="90" src="images/Untitled-1a.jpg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <h3>
+                                        <a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a>
+                                    </h3>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <div class="image_wrap">
+                                    <a href="#"><img width="140" height="90" src="images/Untitled-1a.jpg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <h3>
+                                        <a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a>
+                                    </h3>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <div class="image_wrap">
+                                    <a href="#"><img width="140" height="90" src="images/Untitled-1a.jpg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <h3>
+                                        <a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a>
+                                    </h3>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <div class="image_wrap">
+                                    <a href="#"><img width="140" height="90" src="images/Untitled-1a.jpg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <h3>
+                                        <a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a>
+                                    </h3>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <div class="image_wrap">
+                                    <a href="#"><img width="140" height="90" src="images/Untitled-1a.jpg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <h3>
+                                        <a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a>
+                                    </h3>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <div class="image_wrap">
+                                    <a href="#"><img width="140" height="90" src="images/Untitled-1a.jpg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <h3>
+                                        <a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a>
+                                    </h3>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_col">
+                    <div class="adsCont"></div>
+                    <div class="newsListingWrapper">
+                        <div class="commonHD">
+                            <h2><a href="#">latest News</a></h2>
+                        </div>
+                        <figure>
+                            <figcaption>
+                                <h3>
+                                    <a href="#">ఇల్లు కొనాలనుకుంటే ఈ సంవత్సరంలోనే కొనేయ్యండి.. కారణం ఏంటో తెలుసా..?</a>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3>
+                                    <a href="#">ఇల్లు కొనాలనుకుంటే ఈ సంవత్సరంలోనే కొనేయ్యండి.. కారణం ఏంటో తెలుసా..?</a>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3>
+                                    <a href="#">ఇల్లు కొనాలనుకుంటే ఈ సంవత్సరంలోనే కొనేయ్యండి.. కారణం ఏంటో తెలుసా..?</a>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3>
+                                    <a href="#">ఇల్లు కొనాలనుకుంటే ఈ సంవత్సరంలోనే కొనేయ్యండి.. కారణం ఏంటో తెలుసా..?</a>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3>
+                                    <a href="#">ఇల్లు కొనాలనుకుంటే ఈ సంవత్సరంలోనే కొనేయ్యండి.. కారణం ఏంటో తెలుసా..?</a>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3>
+                                    <a href="#">ఇల్లు కొనాలనుకుంటే ఈ సంవత్సరంలోనే కొనేయ్యండి.. కారణం ఏంటో తెలుసా..?</a>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                        <a href="#" class="view_all">view all</a>
+                    </div>
+                </div>
+            </div>
+            <div class="adsCont"></div>
+            <div class="common_section">
+                <div class="commonHD">
+                    <h2><a href="#">film News</a></h2>
+                    <a href="#" class="moreNews">view more</a>
+                </div>
+                <div class="commonNewsWrapper_FW">
+                    <div class="bigNews_Cont">
+                        <figure>
+                            <div class="image_wrap">
+                                <a href="#"><img width="323" height="214" src="images/Untitled-2.jpg" alt=""></a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#">YCP Leaders: వానల్లోనే గడప గడపకూ ప్రభుత్వం.. చివరి నిమిషంలో మారిన పేరు..</a>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="smallNews_Cont">
+                        <figure>
+                            <div class="image_wrap">
+                                <a href="#"><img width="140" height="90" src="images/Untitled-2a.jpg" alt=""></a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image_wrap">
+                                <a href="#"><img width="140" height="90" src="images/Untitled-2a.jpg" alt=""></a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image_wrap">
+                                <a href="#"><img width="140" height="90" src="images/Untitled-2a.jpg" alt=""></a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image_wrap">
+                                <a href="#"><img width="140" height="90" src="images/Untitled-2a.jpg" alt=""></a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image_wrap">
+                                <a href="#"><img width="140" height="90" src="images/Untitled-2a.jpg" alt=""></a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image_wrap">
+                                <a href="#"><img width="140" height="90" src="images/Untitled-2a.jpg" alt=""></a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="common_section grey_bg">
+                <div class="commonHD">
+                    <h2><a href="#">web stories</a></h2>
+                    <a href="#" class="moreNews">view more</a>
+                </div>
+                <div class="webStories">
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#"><img src="images/RoundedRectangle3.jpeg" alt=""></a>
+                        </div>
+                        <figcaption>
+                            <h3>
+                                <a href="#">మరో ఐదు కథలు రెడీ అవుతున్నాయి : చిరంజీవి </a>
+                            </h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#"><img src="images/RoundedRectangle3copy.jpeg" alt=""></a>
+                        </div>
+                        <figcaption>
+                            <h3>
+                                <a href="#">Acharya : యూఎస్ ప్రీసేల్ రిపోర్ట్ ఇదే.. !</a>
+                            </h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#"><img src="images/RoundedRectangle3copy2.jpeg" alt=""></a>
+                        </div>
+                        <figcaption>
+                            <h3>
+                                <a href="#">Acharya : యూఎస్ ప్రీసేల్ రిపోర్ట్ ఇదే.. !</a>
+                            </h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#"><img src="images/RoundedRectangle3copy3.jpeg" alt=""></a>
+                        </div>
+                        <figcaption>
+                            <h3>
+                                <a href="#">Acharya : యూఎస్ ప్రీసేల్ రిపోర్ట్ ఇదే.. !</a>
+                            </h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#"><img src="images/RoundedRectangle3copy3a.jpeg" alt=""></a>
+                        </div>
+                        <figcaption>
+                            <h3>
+                                <a href="#">మరో ఐదు కథలు రెడీ అవుతున్నాయి : చిరంజీవి </a>
+                            </h3>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="common_section red_bg">
+                <div class="commonHD">
+                    <h2><a href="#">photo gallery</a></h2>
+                    <a href="#" class="moreNews">view more</a>
+                </div>
+                <div class="photoGallery_Wrapper">
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#">
+                                <img width="212" height="212" src="images/Untitled-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు</a></h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#">
+                                <img width="212" height="212" src="images/Untitled-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు</a></h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#">
+                                <img width="212" height="212" src="images/Untitled-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు</a></h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#">
+                                <img width="212" height="212" src="images/Untitled-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు</a></h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#">
+                                <img width="212" height="212" src="images/Untitled-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు</a></h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#">
+                                <img width="212" height="212" src="images/Untitled-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు</a></h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#">
+                                <img width="212" height="212" src="images/Untitled-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు</a></h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#">
+                                <img width="212" height="212" src="images/Untitled-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు</a></h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#">
+                                <img width="212" height="212" src="images/Untitled-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు</a></h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#">
+                                <img width="212" height="212" src="images/Untitled-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు</a></h3>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="common_section">
+                <div class="commonHD">
+                    <h2><a href="#">gossips</a></h2>
+                    <a href="#" class="moreNews">view more</a>
+                </div>
+                <div class="twoColumn_Layout">
+                    <div class="left_col">
+                        <div class="singleThumb_wrapper">
+                            <div class="bigNews_Cont">
+                                <figure>
+                                    <div class="image_wrap">
+                                        <a href="#"><img width="383" height="254" src="images/Untitled-4.jpg" alt=""></a>
+                                    </div>
+                                    <figcaption>
+                                        <h3>
+                                            <a href="#">AP Crime News: వీడు  మనిషికాదు మృగం.. ఆ ఆలోచన వచ్చినందుకే ఉరితీయాలి..</a>
+                                        </h3>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="smallNews_Cont">
+                                <figure>
+                                    <figcaption>
+                                        <h3><a href="#">Social Media: ఐటీ చట్టాలకు
+                                                మరింత పదును... సోషల్ మీడియాకు</a></h3>
+                                    </figcaption>
+                                </figure>
+                                <figure>
+                                    <figcaption>
+                                        <h3><a href="#">YCP Leaders: వానల్లోనే గడప
+                                                గడపకూ ప్రభుత్వం..</a></h3>
+                                    </figcaption>
+                                </figure>
+                                <figure>
+                                    <figcaption>
+                                        <h3><a href="#">Mahesh Babu: మహేష్ బాబు
+                                                ఎవర్నీ ఫాలో అవుతాడో తెలుసా? </a></h3>
+                                    </figcaption>
+                                </figure>
+                                <figure>
+                                    <figcaption>
+                                        <h3><a href="#">YCP Leaders: వానల్లోనే గడప
+                                                గడపకూ ప్రభుత్వం..</a></h3>
+                                    </figcaption>
+                                </figure>
+                                <figure>
+                                    <figcaption>
+                                        <h3><a href="#">Mahesh Babu: మహేష్ బాబు
+                                                ఎవర్నీ ఫాలో అవుతాడో తెలుసా? </a></h3>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right_col">
+                        <div class="adsCont"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="common_section grey_bg">
+                <div class="commonHD">
+                    <h2><a href="#">something special</a></h2>
+                    <a href="#" class="moreNews">view more</a>
+                </div>
+                <div class="commonNewsWrapper_FW">
+                    <div class="bigNews_Cont">
+                        <figure>
+                            <div class="image_wrap">
+                                <a href="#"><img width="323" height="214" src="images/Untitled-2.jpg" alt=""></a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#">YCP Leaders: వానల్లోనే గడప గడపకూ ప్రభుత్వం.. చివరి నిమిషంలో మారిన పేరు..</a>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="smallNews_Cont">
+                        <figure>
+                            <div class="image_wrap">
+                                <a href="#"><img width="140" height="90" src="images/Untitled-2a.jpg" alt=""></a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image_wrap">
+                                <a href="#"><img width="140" height="90" src="images/Untitled-2a.jpg" alt=""></a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image_wrap">
+                                <a href="#"><img width="140" height="90" src="images/Untitled-2a.jpg" alt=""></a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image_wrap">
+                                <a href="#"><img width="140" height="90" src="images/Untitled-2a.jpg" alt=""></a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image_wrap">
+                                <a href="#"><img width="140" height="90" src="images/Untitled-2a.jpg" alt=""></a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image_wrap">
+                                <a href="#"><img width="140" height="90" src="images/Untitled-2a.jpg" alt=""></a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="common_section black_bg">
+                <div class="commonHD">
+                    <h2><a href="#">video gallery</a></h2>
+                    <a href="#" class="moreNews">view more</a>
+                </div>
+                <div class="videoGallery_Wrapper">
+                    <div class="bigThumbVideo_Wrap">
+                        <figure>
+                            <div class="image_wrap">
+                                <a href="#">
+                                    <img width="539" height="315" src="images/Layer277.jpg" alt="">
+                                </a>
+                            </div>
+                            <figcaption>
+                                <h3><a href="#">Deepika, Ranveer show their support for Aamir as they arrive for Laal Ranveer show their</a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image_wrap">
+                                <a href="#">
+                                    <img width="539" height="315" src="images/Layer277.jpg" alt="">
+                                </a>
+                            </div>
+                            <figcaption>
+                                <h3><a href="#">Deepika, Ranveer show their support for Aamir as they arrive for Laal Ranveer show their</a></h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="smallThumbVideo_Wrap">
+                        <figure>
+                            <div class="image_wrap">
+                                <a href="#">
+                                    <img width="206" height="132" src="images/Layer264.jpg" alt="">
+                                </a>
+                            </div>
+                            <figcaption>
+                                <h3><a href="#">Deepika, Ranveer show their support for</a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image_wrap">
+                                <a href="#">
+                                    <img width="206" height="132" src="images/Layer264.jpg" alt="">
+                                </a>
+                            </div>
+                            <figcaption>
+                                <h3><a href="#">Deepika, Ranveer show their support for</a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image_wrap">
+                                <a href="#">
+                                    <img width="206" height="132" src="images/Layer264.jpg" alt="">
+                                </a>
+                            </div>
+                            <figcaption>
+                                <h3><a href="#">Deepika, Ranveer show their support for</a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image_wrap">
+                                <a href="#">
+                                    <img width="206" height="132" src="images/Layer264.jpg" alt="">
+                                </a>
+                            </div>
+                            <figcaption>
+                                <h3><a href="#">Deepika, Ranveer show their support for</a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image_wrap">
+                                <a href="#">
+                                    <img width="206" height="132" src="images/Layer264.jpg" alt="">
+                                </a>
+                            </div>
+                            <figcaption>
+                                <h3><a href="#">Deepika, Ranveer show their support for</a></h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="common_section grey_bg">
+                <div class="commonHD">
+                    <h2><a href="#">bollywood & hollywood</a></h2>
+                    <a href="#" class="moreNews">view more</a>
+                </div>
+                <div class="twoColumn_Layout">
+                    <div class="left_col">
+                        <div class="singleThumb_wrapper">
+                            <div class="bigNews_Cont">
+                                <figure>
+                                    <div class="image_wrap">
+                                        <a href="#"><img width="383" height="254" src="images/Layer279.jpg" alt=""></a>
+                                    </div>
+                                    <figcaption>
+                                        <h3>
+                                            <a href="#">AP Crime News: వీడు  మనిషికాదు మృగం.. ఆ ఆలోచన వచ్చినందుకే ఉరితీయాలి..</a>
+                                        </h3>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="smallNews_Cont">
+                                <figure>
+                                    <figcaption>
+                                        <h3><a href="#">Social Media: ఐటీ చట్టాలకు
+                                                మరింత పదును... సోషల్ మీడియాకు</a></h3>
+                                    </figcaption>
+                                </figure>
+                                <figure>
+                                    <figcaption>
+                                        <h3><a href="#">YCP Leaders: వానల్లోనే గడప
+                                                గడపకూ ప్రభుత్వం..</a></h3>
+                                    </figcaption>
+                                </figure>
+                                <figure>
+                                    <figcaption>
+                                        <h3><a href="#">Mahesh Babu: మహేష్ బాబు
+                                                ఎవర్నీ ఫాలో అవుతాడో తెలుసా? </a></h3>
+                                    </figcaption>
+                                </figure>
+                                <figure>
+                                    <figcaption>
+                                        <h3><a href="#">YCP Leaders: వానల్లోనే గడప
+                                                గడపకూ ప్రభుత్వం..</a></h3>
+                                    </figcaption>
+                                </figure>
+                                <figure>
+                                    <figcaption>
+                                        <h3><a href="#">Mahesh Babu: మహేష్ బాబు
+                                                ఎవర్నీ ఫాలో అవుతాడో తెలుసా? </a></h3>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right_col">
+                        <div class="adsCont"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="threeColumn_Layout">
+                <div class="colGroup red_bg">
+                    <div class="commonHD">
+                        <h2><a href="#">Aa Rojullo</a></h2>
+                        <a href="#" class="moreNews">view more</a>
+                    </div>
+                    <div class="smallNews_Cont">
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">Social Media: ఐటీ చట్టాలకు
+                                        మరింత పదును... సోషల్ మీడియాకు</a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">YCP Leaders: వానల్లోనే గడప
+                                        గడపకూ ప్రభుత్వం..</a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">Mahesh Babu: మహేష్ బాబు
+                                        ఎవర్నీ ఫాలో అవుతాడో తెలుసా? </a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">YCP Leaders: వానల్లోనే గడప
+                                        గడపకూ ప్రభుత్వం..</a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">Mahesh Babu: మహేష్ బాబు
+                                        ఎవర్నీ ఫాలో అవుతాడో తెలుసా? </a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">Social Media: ఐటీ చట్టాలకు
+                                        మరింత పదును... సోషల్ మీడియాకు</a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">YCP Leaders: వానల్లోనే గడప
+                                        గడపకూ ప్రభుత్వం..</a></h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="colGroup black_bg">
+                    <div class="commonHD">
+                        <h2><a href="#">South Cinema</a></h2>
+                        <a href="#" class="moreNews">view more</a>
+                    </div>
+                    <div class="smallNews_Cont">
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">Social Media: ఐటీ చట్టాలకు
+                                        మరింత పదును... సోషల్ మీడియాకు</a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">YCP Leaders: వానల్లోనే గడప
+                                        గడపకూ ప్రభుత్వం..</a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">Mahesh Babu: మహేష్ బాబు
+                                        ఎవర్నీ ఫాలో అవుతాడో తెలుసా? </a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">YCP Leaders: వానల్లోనే గడప
+                                        గడపకూ ప్రభుత్వం..</a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">Mahesh Babu: మహేష్ బాబు
+                                        ఎవర్నీ ఫాలో అవుతాడో తెలుసా? </a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">Social Media: ఐటీ చట్టాలకు
+                                        మరింత పదును... సోషల్ మీడియాకు</a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">YCP Leaders: వానల్లోనే గడప
+                                        గడపకూ ప్రభుత్వం..</a></h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="colGroup blue_bg">
+                    <div class="commonHD">
+                        <h2><a href="#">Other Woods</a></h2>
+                        <a href="#" class="moreNews">view more</a>
+                    </div>
+                    <div class="smallNews_Cont">
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">Social Media: ఐటీ చట్టాలకు
+                                        మరింత పదును... సోషల్ మీడియాకు</a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">YCP Leaders: వానల్లోనే గడప
+                                        గడపకూ ప్రభుత్వం..</a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">Mahesh Babu: మహేష్ బాబు
+                                        ఎవర్నీ ఫాలో అవుతాడో తెలుసా? </a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">YCP Leaders: వానల్లోనే గడప
+                                        గడపకూ ప్రభుత్వం..</a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">Mahesh Babu: మహేష్ బాబు
+                                        ఎవర్నీ ఫాలో అవుతాడో తెలుసా? </a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">Social Media: ఐటీ చట్టాలకు
+                                        మరింత పదును... సోషల్ మీడియాకు</a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">YCP Leaders: వానల్లోనే గడప
+                                        గడపకూ ప్రభుత్వం..</a></h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="common_section grey_bg">
+                <div class="commonHD">
+                    <h2><a href="#">movie reviews</a></h2>
+                    <a href="#" class="moreNews">view more</a>
+                </div>
+                <div class="movieReview_Wrapper">
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#"><img width="138" height="140" src="images/Layer269.jpg" alt=""></a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a></h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#"><img width="138" height="140" src="images/Layer269.jpg" alt=""></a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a></h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#"><img width="138" height="140" src="images/Layer269.jpg" alt=""></a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a></h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#"><img width="138" height="140" src="images/Layer269.jpg" alt=""></a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a></h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#"><img width="138" height="140" src="images/Layer269.jpg" alt=""></a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a></h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#"><img width="138" height="140" src="images/Layer269.jpg" alt=""></a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">ఐటీ చట్టాలకు మరింత పదును... సోషల్ మీడియాకు మరిన్ని రూల్స్</a></h3>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="adsCont"></div>
+            <div class="common_section black_bg">
+                <div class="commonHD">
+                    <h2><a href="#">New Trailers & Teasers</a></h2>
+                    <a href="#" class="moreNews">view more</a>
+                </div>
+                <div class="teaser_wrapper">
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#">
+                                <img width="257" height="175" src="images/Layer280.jpg" alt="">
+                            </a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">గబ్బర్ సింగ్ సహా పవన్ కళ్యాణ్ తన కెరీర్‌లో రీమేక్ చేసిన ఈ</a></h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#">
+                                <img width="257" height="175" src="images/Layer281.jpg" alt="">
+                            </a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">గబ్బర్ సింగ్ సహా పవన్ కళ్యాణ్ తన కెరీర్‌లో రీమేక్ చేసిన ఈ</a></h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#">
+                                <img width="257" height="175" src="images/Layer282.jpg" alt="">
+                            </a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">గబ్బర్ సింగ్ సహా పవన్ కళ్యాణ్ తన కెరీర్‌లో రీమేక్ చేసిన ఈ</a></h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#">
+                                <img width="257" height="175" src="images/Layer283.jpg" alt="">
+                            </a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">గబ్బర్ సింగ్ సహా పవన్ కళ్యాణ్ తన కెరీర్‌లో రీమేక్ చేసిన ఈ</a></h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#">
+                                <img width="257" height="175" src="images/Layer205copy.jpg" alt="">
+                            </a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">గబ్బర్ సింగ్ సహా పవన్ కళ్యాణ్ తన కెరీర్‌లో రీమేక్ చేసిన ఈ</a></h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#">
+                                <img width="257" height="175" src="images/Layer206copy.jpg" alt="">
+                            </a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">గబ్బర్ సింగ్ సహా పవన్ కళ్యాణ్ తన కెరీర్‌లో రీమేక్ చేసిన ఈ</a></h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#">
+                                <img width="257" height="175" src="images/Layer207copy.jpg" alt="">
+                            </a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">గబ్బర్ సింగ్ సహా పవన్ కళ్యాణ్ తన కెరీర్‌లో రీమేక్ చేసిన ఈ</a></h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="image_wrap">
+                            <a href="#">
+                                <img width="257" height="175" src="images/Layer208copy.jpg" alt="">
+                            </a>
+                        </div>
+                        <figcaption>
+                            <h3><a href="#">గబ్బర్ సింగ్ సహా పవన్ కళ్యాణ్ తన కెరీర్‌లో రీమేక్ చేసిన ఈ</a></h3>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="FlexBox">
+                <div class="ott_wrapper">
+                    <div class="commonHD">
+                        <h2><a href="#">OTT Updates</a></h2>
+                        <a href="#" class="moreNews">view more</a>
+                    </div>
+                    <div class="smallNews_Cont">
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">Social Media: ఐటీ చట్టాలకు
+                                        మరింత పదును... సోషల్ మీడియాకు</a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">YCP Leaders: వానల్లోనే గడప
+                                        గడపకూ ప్రభుత్వం..</a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">Mahesh Babu: మహేష్ బాబు
+                                        ఎవర్నీ ఫాలో అవుతాడో తెలుసా? </a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">YCP Leaders: వానల్లోనే గడప
+                                        గడపకూ ప్రభుత్వం..</a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">Mahesh Babu: మహేష్ బాబు
+                                        ఎవర్నీ ఫాలో అవుతాడో తెలుసా? </a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">Social Media: ఐటీ చట్టాలకు
+                                        మరింత పదును... సోషల్ మీడియాకు</a></h3>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <h3><a href="#">YCP Leaders: వానల్లోనే గడప
+                                        గడపకూ ప్రభుత్వం..</a></h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="openRK_wrapper">
+                    <div class="rk_logo">
+                        <a href="#"><img src="images/RK.jpeg" alt=""></a>
+                    </div>
+                    <div class="swiper rkSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <figure>
+                                    <div class="image_wrap">
+                                        <a href="#"><img src="images/Rectangle30copy.jpeg" alt=""></a>
+                                    </div>
+                                    <figcaption>
+                                        <h3>
+                                            <a href="#">దాచుకున్న ఎమోషన్స్‌ సంగీతంలో పెడతా!</a>
+                                        </h3>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <div class="image_wrap">
+                                        <a href="#"><img src="images/Rectangle30copy.jpeg" alt=""></a>
+                                    </div>
+                                    <figcaption>
+                                        <h3>
+                                            <a href="#">దాచుకున్న ఎమోషన్స్‌ సంగీతంలో పెడతా!</a>
+                                        </h3>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <div class="image_wrap">
+                                        <a href="#"><img src="images/Rectangle30copy.jpeg" alt=""></a>
+                                    </div>
+                                    <figcaption>
+                                        <h3>
+                                            <a href="#">దాచుకున్న ఎమోషన్స్‌ సంగీతంలో పెడతా!</a>
+                                        </h3>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <div class="image_wrap">
+                                        <a href="#"><img src="images/Rectangle30copy.jpeg" alt=""></a>
+                                    </div>
+                                    <figcaption>
+                                        <h3>
+                                            <a href="#">దాచుకున్న ఎమోషన్స్‌ సంగీతంలో పెడతా!</a>
+                                        </h3>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="adsCont"></div>
+        </div>
+    </div>
 
     <footer class="main_footer">
         <span class="scrolltop"></span>
@@ -164,6 +1281,8 @@
                     <p>అంతర్జాలంలో ప్రకటనల కొరకు సంప్రదించండి <span>|</span> For internet advertisement and sales please
                         contact</p>
                     <p>Mailicon digitalsales@andhrajyothy.com</p>
+                    <p>Copyright &copy; and Trade Mark Notice owned by or licensed to Aamoda Publications PVT Ltd.</p>
+                    <p>Designed & Developed by AndhraJyothy.</p>
                 </div>
                 <div class="footer_social">
                     <ul>

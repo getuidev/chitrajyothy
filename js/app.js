@@ -31,13 +31,3 @@ $(document).ready(function () {
         })
     }, 500)
 });
-document.addEventListener('scroll', function () {
-    var scrollTop = window.scrollY;
-    var toggleClass = document.getElementsByTagName("body")[0];
-
-    if (scrollTop >= 100) {
-        toggleClass.classList.add('sticky');
-    } else {
-        toggleClass.classList.remove('sticky');
-    }
-});
