@@ -248,7 +248,7 @@ p.sub-title{color:#000;font-size:18px;line-height:24px;word-break:keep-all}
 [data-pagination],[data-pagination] *,[data-pagination] :after,[data-pagination] :before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-kerning:auto}
 [data-pagination]{font-size:16px;font-weight:500;margin:1em auto;display:flex;justify-content:center;align-items:center}
 [data-pagination] ul{list-style-type:none;display:inline;font-size:100%;margin:0;padding:.5em}
-[data-pagination] ul li{display:inline-flex;font-size:100%;width:40px;height:40px;border-radius:40px;justify-content:center;align-items:center;margin-bottom:0;border-bottom:0;padding-bottom:0}
+[data-pagination] ul li{display:inline-flex;font-size:100%;width:40px;height:40px;justify-content:center;align-items:center;margin-bottom:0;border-bottom:0;padding-bottom:0}
 [data-pagination]>a{font-size:16px}
 [data-pagination] a{color:#000;font-size:16px;font-weight:500;padding:.5em}
 [data-pagination] li.current{background:#99003b;color:#fff}
@@ -260,6 +260,8 @@ p.sub-title{color:#000;font-size:18px;line-height:24px;word-break:keep-all}
 .photoDetailWrap figcaption{background:#f4f4f4;padding:10px}
 .photoDetailWrap figcaption h3{color:#000;font-size:18px;line-height:24px;font-weight:400}
 .photoDetailWrap .photoCount{position:absolute;top:0;left:0;background:#99003b;color:#fff;font-size:27px;z-index:1;padding:5px 10px}
+.categoryPage_Wrapper .teaser_wrapper figure{width:32%;margin:0 2% 2% 0;}
+.categoryPage_Wrapper .teaser_wrapper figure:nth-child(3n+3){margin-right:0;}
 @media(max-width:767px){
 .gutterLHS,.gutterRHS{display:none}
 .adsCont{min-height:270px}
@@ -332,4 +334,5 @@ body.openMenu .MenuBtn i:nth-child(3){transform:translateY(-2px) translateX(0) r
 .photoListing_Wrapper .smallNews_Listing figure{width: 100%;margin-right:0;margin-bottom:10px;}
 [data-pagination] a{font-size:14px}
 [data-pagination] ul li{width:30px;height:30px;border-radius:30px}
+.categoryPage_Wrapper .teaser_wrapper figure{width:100%;margin-right:0;}
 }
