@@ -334,7 +334,7 @@ body.openMenu .MenuBtn i:nth-child(3){transform:translateY(-2px) translateX(0) r
 .commonNewsWrapper_FW .smallNews_Cont,.singleThumb_wrapper .smallNews_Cont{width:100%}
 .commonNewsWrapper_FW .smallNews_Cont figure{width:100%;margin-right:0}
 .ott_wrapper,.threeColumn_Layout .colGroup{margin-bottom:10px}
-.openRK_wrapper{width:100%;padding:20px}
+.openRK_wrapper{width:100vw;padding:20px;margin:0 -10px}
 .teaser_wrapper figure{width:49%}
 .teaser_wrapper figure:nth-child(even){margin-right:0}
 .videoGallery_Wrapper .smallThumbVideo_Wrap figure{width:49%;margin:0 2% 2% 0}
