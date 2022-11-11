@@ -281,6 +281,10 @@ p.sub-title{color:#000;font-size:18px;line-height:24px;word-break:keep-all}
 .review_ratings_wrapper figure{width:19.2%;margin:0 1% 10px 0}
 .review_ratings_wrapper figure:last-child{margin-right:0}
 .review_ratings_wrapper .image_wrap::after{content:'+';position:absolute;top:0;right:0;width:36px;height:36px;background:rgba(0,0,0,.5);text-align: center;font-size: 21px;color:#fff;font-weight:600;}
+.adsCont.bottomads{display:none}
+.stickyAds{display:none}
+.onlyWebADS{display:block}
+.onlyMobileADS{display:none}
 @media(max-width:767px){
 .gutterLHS,.gutterRHS{display:none}
 .adsCont{min-height:270px}
@@ -356,4 +360,9 @@ body.openMenu .MenuBtn i:nth-child(3){transform:translateY(-2px) translateX(0) r
 .special_heading{margin:-10px -10px 10px -10px}
 .review_ratings_wrapper figure{width:100%;margin-right:0;margin-bottom:15px;}
 .starRatings::before{font-size:30px;}
+.adsCont.bottomads{min-height:70px}
+.adsCont.bottomads{display:block}
+.stickyAds{display:block;min-height:50px;position:fixed;bottom:0;width:100%;z-index:9;left:0;margin-bottom:0;text-align:center}
+.onlyWebADS{display:none}
+.onlyMobileADS{display:block}
 }
