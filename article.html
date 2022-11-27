@@ -426,52 +426,64 @@
                     </div>
                 </div>
             </div>
-            <div class="common_section grey_bg">
+            <div class="common_section grey_bg relatedNews_Wrapper">
                 <div class="commonHD">
                     <h2><a href="#">related News</a></h2>
                     <a href="#" class="moreNews">view more</a>
                 </div>
-                <div class="relatedNews_Wrapper">
-                    <figure>
-                        <div class="image_wrap">
-                            <a href="#"><img width="204" height="135" src="images/Layer302.jpg" alt=""></a>
+                <div class="swiper relatedNewsSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <figure>
+                                <div class="image_wrap">
+                                    <a href="#"><img width="204" height="135" src="images/Layer302.jpg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <h3><a href="#">AP Crime News: వీడు మనిషికాదు మృగం.. ఆ ఆలోచన వచ్చినందుకే ఉరితీయాలి..</a></h3>
+                                </figcaption>
+                            </figure>
                         </div>
-                        <figcaption>
-                            <h3><a href="#">AP Crime News: వీడు మనిషికాదు మృగం.. ఆ ఆలోచన వచ్చినందుకే ఉరితీయాలి..</a></h3>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <div class="image_wrap">
-                            <a href="#"><img width="204" height="135" src="images/Layer303.jpg" alt=""></a>
+                        <div class="swiper-slide">
+                            <figure>
+                                <div class="image_wrap">
+                                    <a href="#"><img width="204" height="135" src="images/Layer303.jpg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <h3><a href="#">AP Crime News: వీడు మనిషికాదు మృగం.. ఆ ఆలోచన వచ్చినందుకే ఉరితీయాలి..</a></h3>
+                                </figcaption>
+                            </figure>
                         </div>
-                        <figcaption>
-                            <h3><a href="#">AP Crime News: వీడు మనిషికాదు మృగం.. ఆ ఆలోచన వచ్చినందుకే ఉరితీయాలి..</a></h3>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <div class="image_wrap">
-                            <a href="#"><img width="204" height="135" src="images/Layer304.jpg" alt=""></a>
+                        <div class="swiper-slide">
+                            <figure>
+                                <div class="image_wrap">
+                                    <a href="#"><img width="204" height="135" src="images/Layer304.jpg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <h3><a href="#">AP Crime News: వీడు మనిషికాదు మృగం.. ఆ ఆలోచన వచ్చినందుకే ఉరితీయాలి..</a></h3>
+                                </figcaption>
+                            </figure>
                         </div>
-                        <figcaption>
-                            <h3><a href="#">AP Crime News: వీడు మనిషికాదు మృగం.. ఆ ఆలోచన వచ్చినందుకే ఉరితీయాలి..</a></h3>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <div class="image_wrap">
-                            <a href="#"><img width="204" height="135" src="images/Layer305.jpg" alt=""></a>
+                        <div class="swiper-slide">
+                            <figure>
+                                <div class="image_wrap">
+                                    <a href="#"><img width="204" height="135" src="images/Layer305.jpg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <h3><a href="#">AP Crime News: వీడు మనిషికాదు మృగం.. ఆ ఆలోచన వచ్చినందుకే ఉరితీయాలి..</a></h3>
+                                </figcaption>
+                            </figure>
                         </div>
-                        <figcaption>
-                            <h3><a href="#">AP Crime News: వీడు మనిషికాదు మృగం.. ఆ ఆలోచన వచ్చినందుకే ఉరితీయాలి..</a></h3>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <div class="image_wrap">
-                            <a href="#"><img width="204" height="135" src="images/Layer306.jpg" alt=""></a>
+                        <div class="swiper-slide">
+                            <figure>
+                                <div class="image_wrap">
+                                    <a href="#"><img width="204" height="135" src="images/Layer306.jpg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <h3><a href="#">AP Crime News: వీడు మనిషికాదు మృగం.. ఆ ఆలోచన వచ్చినందుకే ఉరితీయాలి..</a></h3>
+                                </figcaption>
+                            </figure>
                         </div>
-                        <figcaption>
-                            <h3><a href="#">AP Crime News: వీడు మనిషికాదు మృగం.. ఆ ఆలోచన వచ్చినందుకే ఉరితీయాలి..</a></h3>
-                        </figcaption>
-                    </figure>
+                    </div>
                 </div>
             </div>
             <div class="adsCont"></div>
@@ -524,6 +536,28 @@
                         additionalMarginTop: 10
                     });
             }
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".relatedNewsSwiper", {
+            slidesPerView: 1.2,
+            spaceBetween: 10,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            breakpoints: {
+                640: {
+                    slidesPerView: 1.2,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 5,
+                },
+            },
         });
     </script>
 </body>

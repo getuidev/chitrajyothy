@@ -6,6 +6,8 @@
         <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
         <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
         <script async custom-element="amp-sticky-ad" src="https://cdn.ampproject.org/v0/amp-sticky-ad-1.0.js"></script>
+        <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+        <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
         <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
         <title>Chitrajyothy: Telugu Latest Cinema News | Latest Telugu Cinema News | తెలుగు సినిమా వార్తలు | Online Telugu Cinema News Today  | Cinema News in Telugu  | Latest Cinema News Headlines in Telugu</title>
         <link rel="canonical" href="article.html">
@@ -97,8 +99,7 @@
             .commonNewsWrapper_FW .smallNews_Cont figure:nth-child(2n+2){margin-right:0}
             .commonNewsWrapper_FW .smallNews_Cont .image_wrap{width:140px;margin-right:10px}
             .commonNewsWrapper_FW .smallNews_Cont figcaption{width:calc(100% - 150px)}
-            .relatedNews_Wrapper figure{width:100%;margin:0 0 10px 0}
-            .relatedNews_Wrapper figure .image_wrap{margin-bottom:5px;}
+            .relatedNews_Wrapper amp-img{margin-bottom:5px;}
             .relatedNews_Wrapper figcaption h3{font-size:18px;line-height:24px;font-weight:400;}
             .photoDetailWrap figure{margin-bottom:10px;position:relative}
             .photoDetailWrap .image_wrap{background:#000}
@@ -442,53 +443,43 @@
                             </div>
                         </div>
                     </div>
-                    <div class="common_section grey_bg">
+                    <div class="common_section grey_bg relatedNews_Wrapper">
                         <div class="commonHD">
                             <h2><a href="#">related News</a></h2>
                             <a href="#" class="moreNews">view more</a>
                         </div>
-                        <div class="relatedNews_Wrapper">
-                            <figure>
-                                <div class="image_wrap">
-                                    <a href="#"><amp-img width="204" height="135" src="images/Layer302.jpg" alt="" layout="responsive"></amp-img></a>
-                                </div>
-                                <figcaption>
+                        <amp-carousel class="carousel1" layout="responsive" height="450" width="500" type="slides">
+                            <div class="slide">
+                                <a href="#"><amp-img width="204" height="135" src="images/Layer302.jpg" alt="" layout="responsive"></amp-img></a>
+                                <amp-fit-text layout="responsive" width="500" height="80">
                                     <h3><a href="#">AP Crime News: వీడు మనిషికాదు మృగం.. ఆ ఆలోచన వచ్చినందుకే ఉరితీయాలి..</a></h3>
-                                </figcaption>
-                            </figure>
-                            <figure>
-                                <div class="image_wrap">
-                                    <a href="#"><amp-img width="204" height="135" src="images/Layer303.jpg" alt="" layout="responsive"></amp-img></a>
-                                </div>
-                                <figcaption>
+                                </amp-fit-text>
+                            </div>
+                            <div class="slide">
+                                <a href="#"><amp-img width="204" height="135" src="images/Layer303.jpg" alt="" layout="responsive"></amp-img></a>
+                                <amp-fit-text layout="responsive" width="500" height="80">
                                     <h3><a href="#">AP Crime News: వీడు మనిషికాదు మృగం.. ఆ ఆలోచన వచ్చినందుకే ఉరితీయాలి..</a></h3>
-                                </figcaption>
-                            </figure>
-                            <figure>
-                                <div class="image_wrap">
-                                    <a href="#"><amp-img width="204" height="135" src="images/Layer304.jpg" alt="" layout="responsive"></amp-img></a>
-                                </div>
-                                <figcaption>
+                                </amp-fit-text>
+                            </div>
+                            <div class="slide">
+                                <a href="#"><amp-img width="204" height="135" src="images/Layer304.jpg" alt="" layout="responsive"></amp-img></a>
+                                <amp-fit-text layout="responsive" width="500" height="80">
                                     <h3><a href="#">AP Crime News: వీడు మనిషికాదు మృగం.. ఆ ఆలోచన వచ్చినందుకే ఉరితీయాలి..</a></h3>
-                                </figcaption>
-                            </figure>
-                            <figure>
-                                <div class="image_wrap">
-                                    <a href="#"><amp-img width="204" height="135" src="images/Layer305.jpg" alt="" layout="responsive"></amp-img></a>
-                                </div>
-                                <figcaption>
+                                </amp-fit-text>
+                            </div>
+                            <div class="slide">
+                                <a href="#"><amp-img width="204" height="135" src="images/Layer305.jpg" alt="" layout="responsive"></amp-img></a>
+                                <amp-fit-text layout="responsive" width="500" height="80">
                                     <h3><a href="#">AP Crime News: వీడు మనిషికాదు మృగం.. ఆ ఆలోచన వచ్చినందుకే ఉరితీయాలి..</a></h3>
-                                </figcaption>
-                            </figure>
-                            <figure>
-                                <div class="image_wrap">
-                                    <a href="#"><amp-img width="204" height="135" src="images/Layer306.jpg" alt="" layout="responsive"></amp-img></a>
-                                </div>
-                                <figcaption>
+                                </amp-fit-text>
+                            </div>
+                            <div class="slide">
+                                <a href="#"><amp-img width="204" height="135" src="images/Layer306.jpg" alt="" layout="responsive"></amp-img></a>
+                                <amp-fit-text layout="responsive" width="500" height="80">
                                     <h3><a href="#">AP Crime News: వీడు మనిషికాదు మృగం.. ఆ ఆలోచన వచ్చినందుకే ఉరితీయాలి..</a></h3>
-                                </figcaption>
-                            </figure>
-                        </div>
+                                </amp-fit-text>
+                            </div>
+                        </amp-carousel>
                     </div>
                     <div class="adsCont"></div>
                 </div>
